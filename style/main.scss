@@ -87,6 +87,7 @@ main{
 
 // range 
 input[type=range] {
+      transition:.3s;
       -webkit-appearance: none;
       width: 100%;
 }
@@ -94,16 +95,23 @@ input[type=range]:focus {
       outline: none;
 }
 input[type=range]::-webkit-slider-runnable-track {
+      -webkit-appearance:none;
       width: 100%;
       height: 10px;
       cursor: pointer;
       background: $lightGrayishBlue;
       border-radius: 5px;
 }
-input[type=range]:focus::-webkit-slider-runnable-track {
-      background: $lightGrayishBlue;
+
+input[type=range]::-webkit-range-progress {
+      background-color:$softCyan;
+      height: 10px;
+      border-radius:30px;
+      border:none;
 }
+
 input[type=range]::-webkit-slider-thumb {
+      transition:.3s;
       -webkit-appearance: none;
       margin-top:-20px;
       height: 50px;
@@ -121,7 +129,9 @@ input[type=range]::-webkit-slider-thumb {
       background-repeat: no-repeat;
       background-size:30px;
 }
+
 input[type=range]::-moz-range-thumb {
+      transition:.3s;
       border:none;
       height: 50px;
       width: 50px;
@@ -148,7 +158,14 @@ input[type=range]::-moz-range-thumb {
             background-color:$softCyan;
       }
 }
+input[type=range]::-moz-range-progress {
+      background-color:$softCyan;
+      height: 10px;
+      border-radius:30px;
+      border:none;
+}
 input[type=range]::-moz-range-track {
+      transition:.3s;
       width: 100%;
       height: 10px;
       border-radius: 5px;
@@ -160,6 +177,7 @@ input[type=range]::-moz-range-track {
 
 // switch button
 .switch-container{
+      transition:.3s;
       position:relative;
       background-color:$lightGrayishBlue;
       width:58px;
