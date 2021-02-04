@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style/style.css">
-  <title>Frontend Mentor | Interactive pricing component</title>
+  <title>Interactive pricing component</title>
 </head>
 <body>
   <main>
@@ -32,18 +32,19 @@
           </div>
         </div>
         <div class="price-slider">
-          <input type="range">
+          <div id="range-div">
+            <input id="range-slider" type="range" min="0" max="100">
+          </div>
           <section class="billing-option">
             <h5>
               Monthly Billing
             </h5>
 
             <div class="switch-container">
-              <input type="checkbox" class="checkbox">
+              <input type="checkbox" checked="true" class="checkbox">
               <div class="knob"></div>
             </div>
             
-
             <h5>
               Yearly Billing 
             </h5>
@@ -73,6 +74,6 @@
       </section>
     </div>
   </main>
-  </div>
+  <script src="js/main.js"></script>
 </body>
 </html>
