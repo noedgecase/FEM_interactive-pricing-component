@@ -1,79 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style/style.css">
-  <title>Interactive pricing component</title>
-</head>
-<body>
-  <main>
-    <section id="introductory-paragraph">
-      <h1>Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial. No credit card required.</p>
-    </section>
-    
-    <div id="card">
-      <section id="top-side">
-        <div id="pageviews-price">
-          <div id="page-views">
-            <h3 id="pageviews-counter">
-              100K Pageviews
-            </h3>
-          </div>
-          <div id="price">
-            <h2 id="changing-price-tag">
-              $16.00 
-            </h2>
-            <h4>
-              / month
-            </h4>
-          </div>
-        </div>
-        <div class="price-slider">
-          <div id="range-div">
-            <input id="range-slider" type="range" min="0" max="4">
-          </div>
-          <section class="billing-option">
-            <h5>
-              Monthly Billing
-            </h5>
 
-            <div class="switch-container">
-              <input type="checkbox" checked="true" class="checkbox">
-              <div class="knob"></div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Interactive pricing component</title>
+  </head>
+
+  <body>
+    <main>
+      <section id="introductory-paragraph">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </section>
+
+      <div id="card">
+        <section id="top-side">
+          <div id="pageviews-price">
+            <div id="page-views">
+              <h3 id="pageviews-counter">
+                100K Pageviews
+              </h3>
             </div>
-            
-            <h5>
-              Yearly Billing 
-            </h5>
-            <label id="discount">
+            <div id="price">
+              <h2 id="changing-price-tag">
+                $16.00
+              </h2>
+              <h4>
+                / month
+              </h4>
+            </div>
+          </div>
+          <div class="price-slider">
+            <div id="range-div">
+              <input id="range-slider" type="range" min="0" max="4">
+            </div>
+            <section class="billing-option">
               <h5>
-                25% discount
+                Monthly Billing
               </h5>
-            </label>
-          </section>
-        </div>
-        <span></span>
-      </section>
-      
-      <section id="bottom-side">
-        <div class="bottom-text">
-          <ul>
-            <li>Unlimited websites</li>
-            <li>100% data ownership</li>
-            <li>Email reports</li>
-          </ul>                
-        </div>
-        <div class="start-trial">
-          <button id="start-trial-btn">
-            Start my trial
-          </button>      
-        </div>
-      </section>
-    </div>
-  </main>
-  <script src="js/main.js"></script>
-</body>
+
+              <div class="switch-container">
+                <input type="checkbox" checked="true" class="checkbox">
+                <div class="knob"></div>
+              </div>
+
+              <h5>
+                Yearly Billing
+              </h5>
+              <label id="discount">
+                <h5>
+                  25% discount
+                </h5>
+              </label>
+            </section>
+          </div>
+          <span></span>
+        </section>
+
+        <section id="bottom-side">
+          <div class="bottom-text">
+            <ul>
+              <li>Unlimited websites</li>
+              <li>100% data ownership</li>
+              <li>Email reports</li>
+            </ul>
+          </div>
+          <div class="start-trial">
+            <button id="start-trial-btn">
+              Start my trial
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+
 </html>

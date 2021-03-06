@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const checkBox = document.querySelector('.checkbox');
 const switchBtn = document.querySelector('.switch-container');
@@ -9,14 +9,13 @@ let inputValue = rangeSlider.value;
 
 console.log(inputValue);
 
-window.addEventListener('load', ()=>{
-      checkBox.checked=false;
+window.addEventListener('load', () => {
+  checkBox.checked = false;
 });
 
-checkBox.addEventListener('click', ()=>{
-      switchBtn.classList.toggle('active');
-})
-
+checkBox.addEventListener('click', () => {
+  switchBtn.classList.toggle('active');
+});
 
 // input range
 
@@ -52,28 +51,27 @@ checkBox.addEventListener('click', ()=>{
 // };
 
 rangeSlider.oninput = function () {
-      // console.log(`else if `);
-      if (inputValue == 0) {
-            pageViews.innerHTML="10K pageviews";
-            priceTag.innerHTML="$8";
-            console.log(`0`);
-      }
-      if (inputValue == 1) {
-            pageViews.innerHTML="50K pageviews";
-            priceTag.innerHTML="$12";
-            console.log(`1`);
-      } else if (inputValue == 2) {
-            pageViews.innerHTML="100K pageviews";
-            priceTag.innerHTML="$16";
-            console.log(`2`);
-      } else if (inputValue == 3) {
-            pageViews.innerHTML="500k pageviews";
-            priceTag.innerHTML="$24";
-            console.log(`3`);
-      } else if (inputValue == 4) {
-            pageViews.innerHTML="1M pageviews";
-            priceTag.innerHTML="$36";
-            console.log(`4`);
-      }
+  // console.log(`else if `);
+  if (inputValue == 0) {
+    pageViews.innerHTML = '10K pageviews';
+    priceTag.innerHTML = '$8';
+    console.log(`0`);
+  }
+  if (inputValue == 1) {
+    pageViews.innerHTML = '50K pageviews';
+    priceTag.innerHTML = '$12';
+    console.log(`1`);
+  } else if (inputValue == 2) {
+    pageViews.innerHTML = '100K pageviews';
+    priceTag.innerHTML = '$16';
+    console.log(`2`);
+  } else if (inputValue == 3) {
+    pageViews.innerHTML = '500k pageviews';
+    priceTag.innerHTML = '$24';
+    console.log(`3`);
+  } else if (inputValue == 4) {
+    pageViews.innerHTML = '1M pageviews';
+    priceTag.innerHTML = '$36';
+    console.log(`4`);
+  }
 };
-    
