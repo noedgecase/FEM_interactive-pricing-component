@@ -5,9 +5,16 @@ const switchBtn = document.querySelector('.switch-container');
 const rangeSlider = document.getElementById('range-slider');
 const pageViews = document.getElementById('pageviews-counter');
 const priceTag = document.getElementById('changing-price-tag');
-const inputValue = rangeSlider.value;
+const billingBtn = document.getElementById('discount');
+const monthYear = document.getElementById('month-year');
 
-console.log(inputValue);
+// console.log(inputValue);
+
+//setting the starting value
+const inputValue = rangeSlider.value;
+rangeSlider.value = 0;
+priceTag.innerHTML = `$8.00`;
+pageViews.innerHTML = '10K pageviews';
 
 window.addEventListener('load', () => {
   checkBox.checked = false;
@@ -18,60 +25,35 @@ checkBox.addEventListener('click', () => {
 });
 
 // input range
-
 rangeSlider.oninput = function () {
   const inputValue = rangeSlider.value;
   switch (inputValue) {
     case '0':
       pageViews.innerHTML = '10K pageviews';
       priceTag.innerHTML = '$8';
-      console.log('lol');
+      console.log('step1');
       break;
     case '1':
       pageViews.innerHTML = '50K pageviews';
       priceTag.innerHTML = '$12';
-      console.log('lol2');
+      console.log('step2');
       break;
     case '2':
       pageViews.innerHTML = '100K pageviews';
       priceTag.innerHTML = '$16';
-      console.log('lol3');
+      console.log('step3');
       break;
     case '3':
       pageViews.innerHTML = '500k pageviews';
       priceTag.innerHTML = '$24';
-      console.log('lol4');
+      console.log('step4');
       break;
     case '4':
       pageViews.innerHTML = '1M pageviews';
       priceTag.innerHTML = '$36';
-      console.log('lol5');
+      console.log('step5');
       break;
   }
 };
 
-// rangeSlider.oninput = function () {
-//   const inputValue = rangeSlider.value;
-//   // console.log(`else if `);
-//   if (inputValue == 0) {
-//     pageViews.innerHTML = '10K pageviews';
-//     priceTag.innerHTML = '$8';
-//     console.log(`0`);
-//   } else if (inputValue == 1) {
-//     pageViews.innerHTML = '50K pageviews';
-//     priceTag.innerHTML = '$12';
-//     console.log(`1`);
-//   } else if (inputValue == 2) {
-//     pageViews.innerHTML = '100K pageviews';
-//     priceTag.innerHTML = '$16';
-//     console.log(`2`);
-//   } else if (inputValue == 3) {
-//     pageViews.innerHTML = '500k pageviews';
-//     priceTag.innerHTML = '$24';
-//     console.log(`3`);
-//   } else if (inputValue == 4) {
-//     pageViews.innerHTML = '1M pageviews';
-//     priceTag.innerHTML = '$36';
-//     console.log(`4`);
-//   }
-// };
+billingBtn.onclick = function () {};

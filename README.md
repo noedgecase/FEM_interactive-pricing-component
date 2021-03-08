@@ -28,11 +28,11 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 Here are the different page view ranges and the corresponding monthly price totals:
 
-- 10K pageviews / $8 per month
-- 50K pageviews / $12 per month
-- 100K pageviews / $16 per month
-- 500k pageviews / $24 per month
-- 1M pageviews / $36 per month
+- 10K pageviews / $8 per month / 2 / $72 per year
+- 50K pageviews / $12 per month / 3 / $108 per year
+- 100K pageviews / $16 per month / 4 / $144 per year
+- 500k pageviews / $24 per month / 6 / $216 per year
+- 1M pageviews / $36 per month / 9 / $324 per year
 
 If the visitor switches the toggle to yearly billing, a 25% discount should be applied to all prices.
 
