@@ -10,10 +10,14 @@ const monthYear = document.getElementById('month-year');
 
 // console.log(inputValue);
 
+let billingType = 0;
+// 0 = monthly, 1 = yearly
+console.log(billingType);
+
 //setting the starting value
 const inputValue = rangeSlider.value;
 rangeSlider.value = 0;
-priceTag.innerHTML = `$8.00`;
+priceTag.innerHTML = `8`;
 pageViews.innerHTML = '10K pageviews';
 
 window.addEventListener('load', () => {
@@ -24,34 +28,64 @@ checkBox.addEventListener('click', () => {
   switchBtn.classList.toggle('active');
 });
 
+checkBox.addEventListener('click', () => {
+  if (billingType === 0) {
+    billingType = 1;
+    console.log(billingType);
+  } else {
+    billingType = 0;
+    console.log(billingType);
+  }
+});
+
 // input range
 rangeSlider.oninput = function () {
   const inputValue = rangeSlider.value;
   switch (inputValue) {
     case '0':
       pageViews.innerHTML = '10K pageviews';
-      priceTag.innerHTML = '$8';
       console.log('step1');
+      if (billingType === 0) {
+        priceTag.innerHTML = '8';
+      } else {
+        priceTag.innerHTML = '2';
+      }
       break;
     case '1':
       pageViews.innerHTML = '50K pageviews';
-      priceTag.innerHTML = '$12';
       console.log('step2');
+      if (billingType === 0) {
+        priceTag.innerHTML = '12';
+      } else {
+        priceTag.innerHTML = '3';
+      }
       break;
     case '2':
       pageViews.innerHTML = '100K pageviews';
-      priceTag.innerHTML = '$16';
       console.log('step3');
+      if (billingType === 0) {
+        priceTag.innerHTML = '16';
+      } else {
+        priceTag.innerHTML = '4';
+      }
       break;
     case '3':
       pageViews.innerHTML = '500k pageviews';
-      priceTag.innerHTML = '$24';
       console.log('step4');
+      if (billingType === 0) {
+        priceTag.innerHTML = '24';
+      } else {
+        priceTag.innerHTML = '6';
+      }
       break;
     case '4':
       pageViews.innerHTML = '1M pageviews';
-      priceTag.innerHTML = '$36';
       console.log('step5');
+      if (billingType === 0) {
+        priceTag.innerHTML = '36';
+      } else {
+        priceTag.innerHTML = '9';
+      }
       break;
   }
 };
