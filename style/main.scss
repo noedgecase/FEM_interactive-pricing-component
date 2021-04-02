@@ -224,8 +224,15 @@ input[type='range']::-moz-range-track {
 }
 // switch button
 
-#changing-price-tag {
+#full-price {
   margin: 0 10px;
+}
+
+#discount-price {
+  margin: 0 10px;
+  h2 {
+    color: $lightGrayishRed;
+  }
 }
 
 input[type='range'] {
@@ -381,4 +388,8 @@ span {
   &:hover {
     color: white;
   }
+}
+
+.hidden {
+  display: none;
 }

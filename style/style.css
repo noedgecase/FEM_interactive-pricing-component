@@ -220,8 +220,15 @@ input[type=range]::-moz-range-track {
   transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
 }
 
-#changing-price-tag {
+#full-price {
   margin: 0 10px;
+}
+
+#discount-price {
+  margin: 0 10px;
+}
+#discount-price h2 {
+  color: #feece7;
 }
 
 input[type=range] {
@@ -376,6 +383,10 @@ span {
 }
 #start-trial-btn:hover {
   color: white;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
