@@ -88,6 +88,7 @@ main {
 input[type='range'] {
   transition: 0.3s;
   -webkit-appearance: none;
+  appearance: none;
   width: 100%;
 }
 input[type='range']:focus {
@@ -251,6 +252,7 @@ input[type='range'] {
   justify-content: center;
   align-items: center;
   margin-top: 25px;
+  cursor:default;
 }
 
 #introductory-paragraph {
@@ -261,8 +263,10 @@ input[type='range'] {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  cursor:default;
   h1 {
     font-size: 30px;
+
   }
   p {
     font-size: 15px;
@@ -346,6 +350,7 @@ span {
   text-align: center;
   display: flex;
   padding: 0 2.5rem;
+  cursor:default;
   li {
     text-align: left;
     position: relative;

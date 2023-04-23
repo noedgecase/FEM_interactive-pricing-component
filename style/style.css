@@ -47,7 +47,7 @@ main {
   height: 50px;
 }
 .billing-option h5 {
-  color: #858fad;
+  color: hsl(225, 20%, 60%);
   font-weight: 600;
 }
 
@@ -61,15 +61,15 @@ main {
 #top-side h3 {
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #858fad;
+  color: hsl(225, 20%, 60%);
 }
 #top-side h2 {
   text-transform: uppercase;
-  color: #293356;
+  color: hsl(227, 35%, 25%);
   font-size: 40px;
 }
 #top-side h4 {
-  color: #858fad;
+  color: hsl(225, 20%, 60%);
   font-weight: 600;
 }
 
@@ -84,6 +84,7 @@ main {
 input[type=range] {
   transition: 0.3s;
   -webkit-appearance: none;
+  appearance: none;
   width: 100%;
 }
 
@@ -96,12 +97,12 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 10px;
   cursor: pointer;
-  background: #eaeefb;
+  background: hsl(224, 65%, 95%);
   border-radius: 5px;
 }
 
 input[type=range]::-webkit-range-progress {
-  background-color: #a5f3eb;
+  background-color: hsl(174, 77%, 80%);
   height: 10px;
   border-radius: 30px;
   border: none;
@@ -114,8 +115,8 @@ input[type=range]::-webkit-slider-thumb {
   height: 50px;
   width: 50px;
   border-radius: 25px;
-  background: #10d5c2;
-  box-shadow: 0 8px 15px #10d5c1;
+  background: hsl(174, 86%, 45%);
+  box-shadow: 0 8px 15px rgb(16, 213, 193);
   cursor: pointer;
   background-image: url("../images/icon-slider.svg");
   background-position: center;
@@ -123,7 +124,7 @@ input[type=range]::-webkit-slider-thumb {
   background-size: 30px;
 }
 input[type=range]::-webkit-slider-thumb:active {
-  background-color: #0a887b;
+  background-color: rgb(10, 136, 123);
   cursor: grab;
 }
 
@@ -133,8 +134,8 @@ input[type=range]::-moz-range-thumb {
   height: 50px;
   width: 50px;
   border-radius: 25px;
-  background: #10d5c2;
-  box-shadow: 0 8px 15px #10d5c1;
+  background: hsl(174, 86%, 45%);
+  box-shadow: 0 8px 15px rgb(16, 213, 193);
   cursor: pointer;
   background-image: url("../images/icon-slider.svg");
   background-position: center;
@@ -142,7 +143,7 @@ input[type=range]::-moz-range-thumb {
   background-size: 30px;
 }
 input[type=range]::-moz-range-thumb:active {
-  background-color: #0a887b;
+  background-color: rgb(10, 136, 123);
   cursor: grab;
 }
 input[type=range]::-moz-range-thumb::before {
@@ -153,11 +154,11 @@ input[type=range]::-moz-range-thumb::before {
   height: 10px;
   width: 100px;
   border-radius: 5px;
-  background-color: #a5f3eb;
+  background-color: hsl(174, 77%, 80%);
 }
 
 input[type=range]::-moz-range-progress {
-  background-color: #a5f3eb;
+  background-color: hsl(174, 77%, 80%);
   height: 10px;
   border-radius: 30px;
   border: none;
@@ -169,13 +170,13 @@ input[type=range]::-moz-range-track {
   height: 10px;
   border-radius: 5px;
   cursor: pointer;
-  background: #eaeefb;
+  background: hsl(224, 65%, 95%);
 }
 
 .switch-container {
   transition: 0.3s;
   position: relative;
-  background-color: #eaeefb;
+  background-color: hsl(224, 65%, 95%);
   width: 58px;
   height: 28px;
   border-radius: 28px;
@@ -183,7 +184,7 @@ input[type=range]::-moz-range-track {
 }
 
 .active {
-  background-color: #a5f3eb !important;
+  background-color: hsl(174, 77%, 80%) !important;
 }
 
 .checkbox {
@@ -214,7 +215,7 @@ input[type=range]::-moz-range-track {
   font-weight: bold;
   text-align: center;
   line-height: 1;
-  background-color: #fafbff;
+  background-color: hsl(230, 100%, 99%);
   padding: 9px 4px;
   border-radius: 50%;
   transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
@@ -228,7 +229,7 @@ input[type=range]::-moz-range-track {
   margin: 0 10px;
 }
 #discount-price h2 {
-  color: #feece7;
+  color: hsl(14, 92%, 95%);
 }
 
 input[type=range] {
@@ -247,16 +248,18 @@ input[type=range] {
   justify-content: center;
   align-items: center;
   margin-top: 25px;
+  cursor: default;
 }
 
 #introductory-paragraph {
-  color: #293356;
+  color: hsl(227, 35%, 25%);
   margin-bottom: 100px;
   width: 500px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  cursor: default;
 }
 #introductory-paragraph h1 {
   font-size: 30px;
@@ -299,14 +302,14 @@ input[type=range] {
 #discount {
   display: flex;
   align-items: center;
-  background-color: #feece7;
+  background-color: hsl(14, 92%, 95%);
   height: 25px;
   border-radius: 10px;
   margin: 0 10px;
   text-align: center;
 }
 #discount h5 {
-  color: #ff8c66 !important;
+  color: hsl(15, 100%, 70%) !important;
   margin: 0 10px;
 }
 
@@ -341,6 +344,7 @@ span {
   text-align: center;
   display: flex;
   padding: 0 2.5rem;
+  cursor: default;
 }
 .bottom-text li {
   text-align: left;
@@ -376,8 +380,8 @@ span {
   outline: none;
   border: none;
   border-radius: 30px;
-  background: #293356;
-  color: #cdd7ee;
+  background: hsl(227, 35%, 25%);
+  color: hsl(223, 50%, 87%);
   height: 40px;
   width: 180px;
 }
