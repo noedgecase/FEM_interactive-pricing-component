@@ -31,9 +31,10 @@ const pageViewsArr = [
   '100K PAGEVIEWS',
   '500K PAGEVIEWS',
   '1M PAGEVIEWS',
+  '5M PAGEVIEWS',
 ];
 
-const fullPriceArr = [8, 12, 16, 24, 36];
+const fullPriceArr = [8, 12, 16, 24, 36, 50];
 
 // Discount Calculator
 function addDiscount(initialPrice) {
@@ -68,6 +69,11 @@ rangeSlider.oninput = function () {
       pageViews.innerHTML = pageViewsArr[4];
       fullPrice.innerHTML = fullPriceArr[4];
       discountPrice.innerHTML = addDiscount(fullPriceArr[4]);
+      break;
+      case '5':
+      pageViews.innerHTML = pageViewsArr[5];
+      fullPrice.innerHTML = fullPriceArr[5];
+      discountPrice.innerHTML = addDiscount(fullPriceArr[5]);
       break;
   }
 };
